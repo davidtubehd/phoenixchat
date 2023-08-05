@@ -30,16 +30,3 @@ Load testing:
 https://github.com/wg/wrk
 brew install wrk
 wrk -t12 -c400 -d30s http://localhost:4000/
-
-Performance Stats:
-----------------------------------------------------------------------
-12 threads and 400 connections
-  Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   282.95ms   93.13ms 835.57ms   76.31%
-    Req/Sec    70.86     33.23   250.00     73.01%
-  25258 requests in 30.10s, 51.78MB read
-  Socket errors: connect 157, read 108, write 0, timeout 0
-  Non-2xx or 3xx responses: 446
-Requests/sec:    839.09
-Transfer/sec:      1.72MB
------------------------------------------------------------------------
